@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://bka5po6583x2i"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_k7q30"]
+
+[node name="fih2" type="Area2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_k7q30")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
