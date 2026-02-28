@@ -13,3 +13,5 @@ position = Vector2(-129, 87)
 position = Vector2(382, -22)
 
 [node name="Player" parent="." instance=ExtResource("3_1bvp3")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
