@@ -9,8 +9,6 @@
 radius = 6.0
 
 [node name="Fishing Rod" type="Node2D"]
-position = Vector2(212, 172)
-scale = Vector2(10, 10)
 script = ExtResource("1_x0c03")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
