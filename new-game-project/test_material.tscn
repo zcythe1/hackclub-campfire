@@ -1,6 +1,7 @@
-[gd_scene load_steps=6 format=3 uid="uid://deb3vc17xvykg"]
+[gd_scene load_steps=7 format=3 uid="uid://deb3vc17xvykg"]
 
 [ext_resource type="Texture2D" uid="uid://bum4h5a0i165" path="res://assets/3 Objects/Catch/1.png" id="1_ol28i"]
+[ext_resource type="Script" uid="uid://cjmqgxvgv76np" path="res://Fish_Wandering.gd" id="1_ovsef"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ol28i"]
 size = Vector2(9, 5)
@@ -28,6 +29,7 @@ animations = [{
 }]
 
 [node name="fih1" type="Area2D" groups=["Materials"]]
+script = ExtResource("1_ovsef")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-0.5, 0.5)
@@ -36,3 +38,5 @@ shape = SubResource("RectangleShape2D_ol28i")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_4wp2x")
 animation = &"fish"
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]

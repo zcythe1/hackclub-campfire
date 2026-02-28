@@ -1,9 +1,9 @@
 extends Node2D
 
-var power = 10
-var power_max = 500
+var power = 30
+var power_max = 250
 
-var gravity = 9.81 * 5
+var gravity = 9.81 * 7.5
 
 @onready var fishing_hook = $"Fishing Hook"
 
@@ -13,7 +13,7 @@ var velocity = Vector2.ZERO
 var state = "reeled"
 
 var reel_direction = Vector2.ZERO
-var reel_speed = 100
+var reel_speed = 250
 
 @onready var reeled_pos = $"Fishing Hook".position
 var start_pos = reeled_pos
@@ -21,13 +21,12 @@ var start_pos = reeled_pos
 
 func _input(event: InputEvent):
 	if state == "reeled":
-		while event.is_action_pressed("Fish"):
+		if event.is_action("Fish"):
 			if power < power_max:
-				power += 20
-			await get_tree().create_timer(0.1).timeout
+				power += 10
+			await get_tree().create_timer(0.05).timeout
 		if event.is_action_released("Fish"):
 			throw(power)
-			power = 10
 	
 	if state == "thrown":
 		if event.is_action_pressed("Fish"):
@@ -42,6 +41,8 @@ func _input(event: InputEvent):
 func throw(throw_power):
 	start_pos = fishing_hook.position
 	state = "thrown"
+	
+	power = 10
 	
 	velocity = Vector2.ZERO
 	velocity.x = throw_power * cos(launch_angle)

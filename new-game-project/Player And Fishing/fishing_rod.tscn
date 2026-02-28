@@ -8,7 +8,7 @@
 [sub_resource type="CircleShape2D" id="CircleShape2D_uokpy"]
 radius = 6.0
 
-[node name="Fishing Rod" type="Node2D"]
+[node name="Fishing Rod" type="Node2D" groups=["Fishing Rod"]]
 script = ExtResource("1_x0c03")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
