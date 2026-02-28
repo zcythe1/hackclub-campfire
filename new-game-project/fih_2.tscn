@@ -1,31 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://bka5po6583x2i"]
+[gd_scene load_steps=4 format=3 uid="uid://bka5po6583x2i"]
 
 [ext_resource type="Script" uid="uid://cjmqgxvgv76np" path="res://Fish_Wandering.gd" id="1_3xgvi"]
-[ext_resource type="Texture2D" uid="uid://defmehkmjrw6t" path="res://assets/3 Objects/Catch/2.png" id="1_uvskv"]
+[ext_resource type="Texture2D" uid="uid://c387k5utb0b6l" path="res://assets/fih/Glad Fish.png" id="2_3xgvi"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_k7q30"]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_3xgvi"]
-atlas = ExtResource("1_uvskv")
-region = Rect2(0, 0, 16, 12)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_65gwg"]
-atlas = ExtResource("1_uvskv")
-region = Rect2(16, 0, 16, 12)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_8me3v"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_3xgvi")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_65gwg")
-}],
-"loop": true,
-"name": &"default",
-"speed": 5.0
-}]
 
 [node name="fih2" type="Area2D" groups=["Materials"]]
 script = ExtResource("1_3xgvi")
@@ -33,8 +11,7 @@ script = ExtResource("1_3xgvi")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_k7q30")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-sprite_frames = SubResource("SpriteFrames_8me3v")
-frame_progress = 0.17660353
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_3xgvi")
 
 [connection signal="area_entered" from="." to="." method="_on_area_entered"]

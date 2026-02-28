@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://3f3vysv6miei"]
+
+[ext_resource type="Script" uid="uid://cjmqgxvgv76np" path="res://Fish_Wandering.gd" id="1_iayoh"]
+[ext_resource type="Texture2D" uid="uid://blg26gwstr5lq" path="res://assets/fih/secret fish.png" id="2_iayoh"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ol28i"]
+size = Vector2(15, 11)
+
+[node name="fih1" type="Area2D" groups=["Materials"]]
+script = ExtResource("1_iayoh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_ol28i")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_iayoh")

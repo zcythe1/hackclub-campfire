@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cmid14nvrigqr"
-path="res://.godot/imported/Fisherman_Idle.png-018a327d7751c09df51d7ea6a3f489a9.ctex"
+uid="uid://c387k5utb0b6l"
+path="res://.godot/imported/Glad Fish.png-369518ff39165a6c32f2dbf9a565bbaf.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/1 Fisherman/Fisherman_Idle.png"
-dest_files=["res://.godot/imported/Fisherman_Idle.png-018a327d7751c09df51d7ea6a3f489a9.ctex"]
+source_file="res://assets/fih/Glad Fish.png"
+dest_files=["res://.godot/imported/Glad Fish.png-369518ff39165a6c32f2dbf9a565bbaf.ctex"]
 
 [params]
 
