@@ -15,6 +15,8 @@ var state = "reeled"
 var reel_direction = Vector2.ZERO
 var reel_speed = 250
 
+var hook_move_speed = 50
+
 @onready var reeled_pos = $"Fishing Hook".position
 var start_pos = reeled_pos
 
@@ -32,6 +34,10 @@ func _input(event: InputEvent):
 		if event.is_action_pressed("Fish"):
 			reel()
 			await get_tree().create_timer(1).timeout
+		elif event.is_action("A"):
+			velocity.x = -hook_move_speed
+		elif event.is_action("D"):
+			velocity.x = hook_move_speed
 	
 	if state == "reeling":
 		if event.is_action_released("Fish") && velocity != Vector2.ZERO:
@@ -69,6 +75,7 @@ func _physics_process(delta: float) -> void:
 			velocity = Vector2.ZERO
 			if !Input.is_action_pressed("Fish"):
 				state = "reeled"
+	
 		
 	fishing_hook.position += velocity * delta
 	velocity -= velocity * delta * 1.2
