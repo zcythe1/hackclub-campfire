@@ -6,7 +6,7 @@ extends Node2D
 @export var rare_fish: Array[PackedScene] = []
 @export var secret_fish: Array[PackedScene] = []
 
-@onready var spawn_area = $fishingzone/boundary
+@onready var spawn_area = $boundary
 
 func _ready():
 	for child in get_children():
