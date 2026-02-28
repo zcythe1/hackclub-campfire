@@ -11,9 +11,9 @@ config_version=5
 [application]
 
 config/name="New Game Project"
-run/main_scene="uid://c2bev34nti2v1"
 config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://icon.svg"
+<<<<<<<HEADrun/main_scene="uid://cqow47bch5ocs"
 
 [dotnet]
 
