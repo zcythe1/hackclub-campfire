@@ -70,4 +70,4 @@ func _physics_process(delta: float) -> void:
 				state = "reeled"
 		
 	fishing_hook.position += velocity * delta
-	velocity -= velocity * delta
+	velocity -= velocity * delta * 1.2
