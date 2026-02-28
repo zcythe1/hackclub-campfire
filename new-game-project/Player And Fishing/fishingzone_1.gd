@@ -37,7 +37,7 @@ func pick_fish_for_distance(distance: float) -> PackedScene:
 	var common_weight   = lerpf(0.90, 0.20, t)
 	var uncommon_weight = lerpf(0.09, 0.40, t)
 	var rare_weight = lerpf(0.09, 0.90, t)
-	var secret_weight = lerpf(0.09, 300, t)
+	var secret_weight = lerpf(0.09, 10, t)
 	var roll = randf()
 	var pool: Array[PackedScene]
 	if roll < common_weight:
