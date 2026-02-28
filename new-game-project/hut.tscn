@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dkp1wfvrvvmsg"]
+
+[ext_resource type="Texture2D" uid="uid://b5dqfuunjc7ri" path="res://assets/3 Objects/Fishing_hut.png" id="1_jt3o7"]
+
+[node name="Sprite2D" type="Sprite2D"]
+texture = ExtResource("1_jt3o7")
