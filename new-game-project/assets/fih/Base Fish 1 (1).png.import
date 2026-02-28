@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cmid14nvrigqr"
-path="res://.godot/imported/Fisherman_Idle.png-018a327d7751c09df51d7ea6a3f489a9.ctex"
+uid="uid://u4078006pb25"
+path="res://.godot/imported/Base Fish 1 (1).png-eb439b35aebc8fb79700f4206d798358.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/1 Fisherman/Fisherman_Idle.png"
-dest_files=["res://.godot/imported/Fisherman_Idle.png-018a327d7751c09df51d7ea6a3f489a9.ctex"]
+source_file="res://assets/fih/Base Fish 1 (1).png"
+dest_files=["res://.godot/imported/Base Fish 1 (1).png-eb439b35aebc8fb79700f4206d798358.ctex"]
 
 [params]
 
