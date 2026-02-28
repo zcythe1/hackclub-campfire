@@ -1,0 +1,17 @@
+[gd_scene load_steps=5 format=3 uid="uid://cham67fctup8i"]
+
+[ext_resource type="Script" uid="uid://u3d0acre5luf" path="res://Player And Fishing/fishingzone_1.gd" id="1_cmmgk"]
+[ext_resource type="PackedScene" uid="uid://beju8wgumubnn" path="res://fih_1.tscn" id="2_s0ln3"]
+[ext_resource type="PackedScene" uid="uid://bka5po6583x2i" path="res://fih_2.tscn" id="3_30ymp"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fasy1"]
+size = Vector2(1243, 747)
+
+[node name="fishingzone" type="Area2D"]
+script = ExtResource("1_cmmgk")
+common_fish = Array[PackedScene]([ExtResource("2_s0ln3")])
+uncommon_fish = Array[PackedScene]([ExtResource("3_30ymp")])
+
+[node name="boundary" type="CollisionShape2D" parent="."]
+position = Vector2(591.5, 349.5)
+shape = SubResource("RectangleShape2D_fasy1")

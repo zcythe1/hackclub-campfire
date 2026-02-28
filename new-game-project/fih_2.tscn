@@ -1,6 +1,29 @@
-[gd_scene load_steps=2 format=3 uid="uid://bka5po6583x2i"]
+[gd_scene load_steps=6 format=3 uid="uid://bka5po6583x2i"]
+
+[ext_resource type="Texture2D" uid="uid://defmehkmjrw6t" path="res://assets/3 Objects/Catch/2.png" id="1_uvskv"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_k7q30"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3xgvi"]
+atlas = ExtResource("1_uvskv")
+region = Rect2(0, 0, 16, 12)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_65gwg"]
+region = Rect2(16, 0, 16, 12)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_8me3v"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3xgvi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_65gwg")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
 
 [node name="fih2" type="Area2D"]
 
@@ -8,3 +31,5 @@
 shape = SubResource("RectangleShape2D_k7q30")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_8me3v")
+frame_progress = 0.17660353
