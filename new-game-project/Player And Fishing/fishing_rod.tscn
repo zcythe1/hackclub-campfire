@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://c2bev34nti2v1"]
 
-[ext_resource type="Script" uid="uid://dpbawwe07kbq5" path="res://fishing_rod.gd" id="1_x0c03"]
-[ext_resource type="Script" uid="uid://blm7r77rc03v4" path="res://fishing_hook.gd" id="2_1tjrd"]
+[ext_resource type="Script" uid="uid://dpbawwe07kbq5" path="res://Player And Fishing/fishing_rod.gd" id="1_x0c03"]
+[ext_resource type="Script" uid="uid://blm7r77rc03v4" path="res://Player And Fishing/fishing_hook.gd" id="2_1tjrd"]
 [ext_resource type="Texture2D" uid="uid://imjf3ufsird" path="res://assets/3 Objects/Fish-rod.png" id="2_uokpy"]
 [ext_resource type="Texture2D" uid="uid://4q335xxs2p" path="res://icon.svg" id="4_8e81y"]
 

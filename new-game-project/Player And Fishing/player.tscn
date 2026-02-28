@@ -1,6 +1,6 @@
-[gd_scene load_steps=16 format=3 uid="uid://ckudr8chj1kgo"]
+[gd_scene load_steps=16 format=3 uid="uid://k6hgyvs5m680"]
 
-[ext_resource type="Script" uid="uid://80kl10p8d3vr" path="res://player.gd" id="1_i3pqv"]
+[ext_resource type="Script" uid="uid://80kl10p8d3vr" path="res://Player And Fishing/player.gd" id="1_i3pqv"]
 [ext_resource type="Texture2D" uid="uid://bdu14256i0k8b" path="res://assets/1 Fisherman/Fisherman_fish.png" id="1_onrkg"]
 [ext_resource type="Texture2D" uid="uid://d07pk686el8wn" path="res://assets/1 Fisherman/Fisherman_walk.png" id="2_i3pqv"]
 
@@ -94,11 +94,8 @@ size = Vector2(28, 34)
 script = ExtResource("1_i3pqv")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(469, -45)
 sprite_frames = SubResource("SpriteFrames_606se")
 animation = &"walk"
-frame_progress = 0.14760818
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(460, -38)
 shape = SubResource("RectangleShape2D_hqtel")
