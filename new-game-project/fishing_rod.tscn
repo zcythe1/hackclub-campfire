@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://c2bev34nti2v1"]
+
+[ext_resource type="Script" uid="uid://dpbawwe07kbq5" path="res://fishing_rod.gd" id="1_x0c03"]
+[ext_resource type="Script" uid="uid://bmhlljieahv3t" path="res://fishing_hook.gd" id="2_1tjrd"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_uokpy"]
+
+[node name="Fishing Rod" type="Node2D"]
+script = ExtResource("1_x0c03")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+
+[node name="Fishing Hook" type="Area2D" parent="."]
+script = ExtResource("2_1tjrd")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Fishing Hook"]
+shape = SubResource("CircleShape2D_uokpy")
+
+[node name="Sprite2D" type="Sprite2D" parent="Fishing Hook"]
