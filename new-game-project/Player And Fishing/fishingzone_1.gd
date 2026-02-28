@@ -16,6 +16,8 @@ func _ready():
 	await get_tree().process_frame
 	spawn_fish()
 	
+	loop_spawn()
+	
 func get_random_spawn_point() -> Vector2:
 	var angle = randf_range(0, TAU)
 	var distance = randf_range(0, spawn_radius)
@@ -60,3 +62,8 @@ func spawn_fish() -> void:
 		var fish = scene.instantiate()
 		fish.position = point
 		add_child(fish)
+
+func loop_spawn():
+	while true:
+		await get_tree().create_timer(10).timeout
+		spawn_fish()
