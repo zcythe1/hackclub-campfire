@@ -9,6 +9,7 @@ atlas = ExtResource("1_uvskv")
 region = Rect2(0, 0, 16, 12)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_65gwg"]
+atlas = ExtResource("1_uvskv")
 region = Rect2(16, 0, 16, 12)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_8me3v"]
