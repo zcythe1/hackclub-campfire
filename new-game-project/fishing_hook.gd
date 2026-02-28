@@ -1,6 +1,9 @@
 extends Area2D
 
+@onready var hook = $CollisionShape2D
 
 
-func _on_body_entered(body: Node2D) -> void:
-	print(body)
+func _on_area_entered(area: Area2D) -> void:
+	if (area.is_in_group("Materials")):
+		area.reparent(self)
+		area.position = hook.position

@@ -1,7 +1,7 @@
 extends Node2D
 
 var power = 10
-var power_max = 50
+var power_max = 500
 
 var gravity = 9.81 * 5
 
@@ -23,8 +23,8 @@ func _input(event: InputEvent):
 	if state == "reeled":
 		while event.is_action_pressed("Fish"):
 			if power < power_max:
-				power += 5
-			await get_tree().create_timer(0.25).timeout
+				power += 20
+			await get_tree().create_timer(0.1).timeout
 		if event.is_action_released("Fish"):
 			throw(power)
 			power = 10
