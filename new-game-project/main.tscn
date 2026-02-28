@@ -1,10 +1,10 @@
-[gd_scene load_steps=6 format=3 uid="uid://dxjjrgwvx5pl0"]
+[gd_scene load_steps=6 format=3 uid="uid://cqow47bch5ocs"]
 
-[ext_resource type="PackedScene" path="res://floor.tscn" id="2_d8ac1"]
-[ext_resource type="PackedScene" path="res://hut.tscn" id="2_h2yge"]
-[ext_resource type="PackedScene" path="res://player.tscn" id="3_1bvp3"]
-[ext_resource type="PackedScene" uid="uid://c2bev34nti2v1" path="res://fishing_rod.tscn" id="4_1bvp3"]
-[ext_resource type="PackedScene" uid="uid://dbg7d8e8j8phi" path="res://test_material.tscn" id="5_lquwl"]
+[ext_resource type="PackedScene" uid="uid://bylp2tvf6hcn4" path="res://floor.tscn" id="2_d8ac1"]
+[ext_resource type="PackedScene" uid="uid://dkp1wfvrvvmsg" path="res://hut.tscn" id="2_h2yge"]
+[ext_resource type="PackedScene" uid="uid://ckudr8chj1kgo" path="res://player.tscn" id="3_1bvp3"]
+[ext_resource type="PackedScene" path="res://fishing_rod.tscn" id="4_1bvp3"]
+[ext_resource type="PackedScene" uid="uid://deb3vc17xvykg" path="res://test_material.tscn" id="5_lquwl"]
 
 [node name="Node2D" type="Node2D"]
 position = Vector2(-129, 87)
